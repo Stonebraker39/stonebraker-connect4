@@ -1,7 +1,6 @@
-/* apply a clean, modern look to entire page */
 body
 {
-  font-family: 'Poppins', sans-serif;  /* a modern, stylish font */
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   background: white; /* set background to white */
   color: #333; /* dark gray text for contrast */
@@ -13,7 +12,7 @@ body
   min-height: 100vh;
 }
 
-/* center board and make it visually appealing */
+/* center board */
 .board
 {
   display: grid;
@@ -21,7 +20,7 @@ body
   grid-template-rows: repeat(6, 70px);
   gap: 5px;
   margin: 20px auto;
-  width: 520px; /* adjusted width for better fit */
+  width: 520px; /* adjusted */
   background: #004080; /* dark blue board */
   padding: 25px;
   border-radius: 15px;
@@ -39,8 +38,8 @@ body
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease-in-out; /* smooth effect when pieces appear */
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* inner shadow for depth */
+  transition: transform 0.2s ease-in-out; /* smooth transition when pieces appear */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* add hover effect to indicate where a piece will drop */
