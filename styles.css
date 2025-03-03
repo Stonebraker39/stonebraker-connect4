@@ -1,0 +1,77 @@
+/* apply a clean, modern look to entire page */
+body
+{
+  font-family: 'Poppins', sans-serif;  /* a modern, stylish font */
+  text-align: center;
+  background: white; /* set background to white */
+  color: #333; /* dark gray text for contrast */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* center board and make it visually appealing */
+.board
+{
+  display: grid;
+  grid-template-columns: repeat(7, 70px); /* slightly larger for better visibility */
+  grid-template-rows: repeat(6, 70px);
+  gap: 5px;
+  margin: 20px auto;
+  width: 520px; /* adjusted width for better fit */
+  background: #004080; /* dark blue board */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* adds a subtle shadow */
+  border: 4px solid #003366; /* darker blue border for depth */
+}
+
+/* style individual cells (pieces) */
+.cell
+{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f0f0f0; /* light gray background for empty slots */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out; /* smooth effect when pieces appear */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* inner shadow for depth */
+}
+
+/* add hover effect to indicate where a piece will drop */
+.cell:hover
+{
+  opacity: 0.8;
+}
+
+/* styling for player 1's pieces (red) */
+.red
+{
+  background: radial-gradient(circle, #ff4e50, #ff0000); /* more vibrant red */
+}
+
+/* styling for player 2's pieces (yellow) */
+.yellow
+{
+  background: radial-gradient(circle, #ffcc00, #ffdd44); /* bright yellow */
+}
+
+/* style turn indicator */
+#turn-indicator
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1); /* light gray background */
+  color: #333; /* dark text */
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
